@@ -11,7 +11,7 @@ I then had to chose between Kotlin and Java, but since I had already followed ma
 # The App itself
 The menu alllows to:
 - Display the rules of the card game
-- Switch all the copŷ from English to French (it IS a French game after all...)
+- Switch all the copy from English to French (it IS a French game after all...)
 - Start a new game
 
 The players can then perform different actions, like awarding points depending on the melds they declare and ending a round to award bonus points when the two game phases end.
