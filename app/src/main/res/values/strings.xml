@@ -1,0 +1,57 @@
+<resources>
+
+    <string name="app_name">BEZIGZAG</string>
+
+    <string name="back_to_menu">back to menu</string>
+    <string name="back">back</string>
+
+    <string name="main_menu_two_players_game">New Game</string>
+    <string name="main_menu_rules_menu">rules</string>
+
+
+    <string name="rules_menu_title">RULES OF BEZIGUE</string>
+    <string name="rules_display_rules">Click on a button to display the desired rules!</string>
+    <string name="rules_preparation">preparation</string>
+    <string name="rules_dealing_cards">dealing cards</string>
+    <string name="rules_first_play_phase">first play phase</string>
+    <string name="rules_second_play_phase">second play phase</string>
+
+    <string name="winner_is">And the winner is…</string>
+    <string name="winner_score">With a score of…</string>
+
+    <string name="score_4jacks">4 Jacks</string>
+    <string name="score_4queens">4 Queens</string>
+    <string name="score_4kings">4 Kings</string>
+    <string name="score_4aces">4 Aces</string>
+    <string name="score_wedding">Wedding</string>
+    <string name="score_royal_wedding">Royal Wedding</string>
+    <string name="score_bezigue">Bezigue</string>
+    <string name="score_double_bezigue">Double Bezigue</string>
+    <string name="score_helper">Click on a meld to award the corresponding points</string>
+
+    <string name="attribute_points">Click on a player\'s name to award points during the first phase.\nClick on END ROUND when the second phase is over.</string>
+
+    <string name="end_round_last_trick_bonus">WHO WON THE LAST TRICK?</string>
+    <string name="end_round_aces_and_tens">HOW MANY ACES AND TENS DID THE PLAYERS WIN?</string>
+    <string name="end_round_aces_and_tens_hint"># of Aces and Tens</string>
+    <string name="end_round_next_round">NEXT ROUND</string>
+
+    <string name="both_warnings_toast">The combined number of aces and tens must be equal to 16. The last trick bonus must be assigned to a player.</string>
+    <string name="bonus_points_warning_toast">The combined number of aces and tens must be equal to 16.</string>
+    <string name="last_trick_warning_toast">The last trick bonus must be assigned to a player.</string>
+
+    <string name="game_end_round">END ROUND</string>
+
+    <string name="two_players_menu_player1">Enter Player 1 Name</string>
+    <string name="two_players_menu_player2">Enter Player 2 Name</string>
+    <string name="two_players_menu_start_game">START THE GAME!</string>
+
+    <string name="display_preparation">Take two packs of cards and remove all cards with a value below seven, along with the jokers or wildcards. Remaining should be the cards with the numerical values of seven through to ten, the face cards and the aces.\n\nShuffle the two packs together.\nA cut is made. The player with the highest valued card is given the privilege of dealing.\nIn both game phases, the value of the cards from highest to lowest is as follows: A, 10, K, Q, J, 9, 8, 7.</string>
+
+    <string name="display_dealing">The dealing sequence is as follows:\nDeal three cards to the opponent, three cards to the self, two cards to the opponent, two cards to the self, three cards to the opponent once more and finally, three more cards to the self. (In other words, it is in a pattern of 3, 2, 3.)\n\nThe remaining cards are placed in a stack or talon in the middle of the table. The top card from the talon is turned over and placed face up alongside the talon.\n\n This card designates what the trump suit will be. If the dealer turns over the seven as the trump card, ten points are awarded. This card is available to be swapped by any player who wins a trick and holds the 7 of trumps (which replaces it as the face up card).\n\n The face up card (whether it is the original or a 7 of trumps) is the last to be taken (by the loser of the trick just played) at the end of the first phase of play.\n\nIn a variation of the game, if a player finds no face card in his hand (A, 10, K, Q or J), a "carte blanche" may be declared which receives 50 points from the opponent. All cards must be shown to the opponent to claim these points. This is not a standard rule of two-player Bezigue but is allowed in some regions.</string>
+
+    <string name="display_phase1">The non-dealer may lead any card. This card is placed face upwards on the table. The dealer must respond by playing a card. If it is a card of the same suit but has a higher value or any card of the trump suit and the leading card is not of the trump suit, it wins the trick. If it is a lower or equal card of the same suit or any card of a different color, the non-dealer wins the trick.\n\nWhoever wins the trick takes the cards and places them in a separate pile. These cards play no further part in the round. They are only used for scoring brisques.\n\nNote that there is no obligation to follow suit or to trump in this part of the game.\nThe only time a player would have a strong motivation to win the trick is when there are aces or tens being played or the player has a meld they wish to declare.\n\nThe winner of the trick has an opportunity to present a meld by declaring his combination and placing them face upwards on the table. They are still part of his hand but must remain on the table in view of the opponent until played in later tricks.\n\nOnly one meld can be declared per trick won. Scores for these are written immediately.\n\nNote that a card used in one meld cannot be played in the same meld later on. For example, K♣ married to Q♣ cannot later be married to the second Q♣. However, it can be used for a sequence of four kings as this is a different meld. Were both the other king and queen of clubs to be presented, the first king and queen could be part of the marriage.\n\nA special meld declaration involves the seven of trumps. It is not placed on the table with the others. Instead, it can be swapped for the upturned trump card. The second seven of trumps can also be declared in this way.\nThe winner of the trick draws from the talon once they have declared their meld. The loser then also draws a card from the talon, thus maintaining eight cards in their hand at all times at this stage of the game. If no melds are declared by the winner of the trick, the cards are drawn immediately.</string>
+
+    <string name="display_phase2">Once the talon is exhausted, the game play changes somewhat in nature.\n\nThe winner of the final trick draws the last card from the talon, whilst the loser takes the upturned trump card. The final eight tricks are played in this way:\nFrom now on, the player must follow suit and play a higher card than the leader if they can. If they cannot follow suit, they must trump to win the trick. If they cannot follow suit or trump, they can only then play any other card.\n\nMelds cannot be declared in this part of the game.\nThe winner of the final trick is granted ten bonus points.\nCounting the brisques:\nAfter the last trick is played, each player gathers the cards they have won and counts the number of aces and tens. Each of these is worth ten points. This number is added to the total score already earned from the various melds the player has declared.\nThe first player to reach 1,500 points wins!</string>
+
+    </resources>
