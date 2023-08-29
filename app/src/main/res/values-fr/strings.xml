@@ -1,0 +1,90 @@
+<resources>
+
+    <string name="app_name">BEZIGZAG</string>
+
+
+    <string name="back_to_menu">retour au menu</string>
+    <string name="back">retour</string>
+
+    <string name="main_menu_two_players_game">Nouvelle Partie</string>
+    <string name="main_menu_rules_menu">Règles</string>
+
+
+    <string name="rules_menu_title">RÈGLES DU BÉZIGUE</string>
+    <string name="rules_display_rules">Cliquez sur un bouton pour afficher les règles désirées!</string>
+    <string name="rules_preparation">Préparation</string>
+    <string name="rules_dealing_cards">Donne</string>
+    <string name="rules_first_play_phase">Première phase de jeu</string>
+    <string name="rules_second_play_phase">Seconde phase de jeu</string>
+
+    <string name="winner_is">Et le vainqueur est…</string>
+    <string name="winner_score">Avec un score de…</string>
+
+    <string name="score_4jacks">4 Valets</string>
+    <string name="score_4queens">4 Dames</string>
+    <string name="score_4kings">4 Rois</string>
+    <string name="score_4aces">4 As</string>
+    <string name="score_wedding">Mariage</string>
+    <string name="score_royal_wedding">Mariage Royal</string>
+    <string name="score_bezigue">Bézigue</string>
+    <string name="score_double_bezigue">Double Bézigue</string>
+    <string name="score_helper">Cliquez sur une annonce pour attribuer les points</string>
+
+
+    <string name="attribute_points">Cliquez sur le nom d\'un joueur pour lui attribuer des points.\nCliquez sur FIN DE LA MANCHE à la fin de la seconde phase.</string>
+
+
+    <string name="end_round_last_trick_bonus">QUI A FAIT LE DERNIER PLI?</string>
+    <string name="end_round_aces_and_tens">COMBIEN D\'AS ET DE DIX ONT REMPORTÉ LES JOUEURS?</string>
+    <string name="end_round_aces_and_tens_hint"># d\'As et de Dix</string>
+    <string name="end_round_next_round">PROCHAINE MANCHE</string>
+
+    <string name="both_warnings_toast">Le nombre combiné d\'As et de Dix doit être égal à 16. Le dix de der doit être assigné à l\'un des joueurs.</string>
+    <string name="bonus_points_warning_toast">Le nombre combiné d\'As et de Dix doit être égal à 16.</string>
+    <string name="last_trick_warning_toast">Le dix de der doit être assigné à l\'un des joueurs.</string>
+
+    <string name="game_end_round">FIN DE LA MANCHE</string>
+
+    <string name="two_players_menu_player1">Entrez le nom du joueur 1 ici</string>
+    <string name="two_players_menu_player2">Entrez le nom du joueur 2 ici</string>
+    <string name="two_players_menu_start_game">COMMENCER LA PARTIE!</string>
+
+    <string name="display_preparation">
+    Prenez deux paquets de cartes et retirez toutes les cartes d\'une valeur inférieure à sept, ainsi que les jokers. Il devrait rester les cartes avec les valeurs numériques de sept à dix, les têtes et les as.\n\n
+    Mélangez les deux paquets ensemble.\n\n
+    Une coupe est faite. Le joueur avec la carte ayant la valeur la plus élevée a le privilège de distribuer.\n\n
+    Pendant les deux phases de jeu, la valeur des cartes du plus haut au plus bas est la suivante : A, 10, K, Q, J, 9, 8, 7.
+</string>
+
+    <string name="display_dealing">
+    La séquence de donne est la suivante :\n\n
+    Distribuez trois cartes à l\'adversaire, trois cartes à vous-même, deux cartes à l\'adversaire, deux cartes à vous-même, trois cartes à l\'adversaire une fois de plus et enfin, trois autres cartes à vous-même. (En d\'autres termes, c\'est une donne de 3, 2, 3.)\n\n
+    Les cartes restantes sont placées dans une pile au milieu de la table. La carte du dessus de la pile est retournée et placée face visible à côté de la pile. Cette carte désigne ce que sera l\'atout. Si le donneur retourne le sept comme atout, dix points sont attribués. Cette carte est disponible pour être échangée par tout joueur qui remporte un pli et détient le 7 d\'atouts (qui le remplace comme carte face visible). La carte face visible (qu\'il s\'agisse de l\'original ou d\'un 7 d\'atout) est la dernière à être prise (par le perdant du pli qui vient d\'être joué) à la fin de la première phase de jeu.\n\n
+    Dans une variante du jeu, si un joueur ne trouve aucune figure dans sa main (A, 10, K, Q ou J), une \"carte blanche\" peut être déclarée qui reçoit 50 points de l\'adversaire. Toutes les cartes doivent être montrées à l\'adversaire pour réclamer ces points. Ce n\'est pas une règle standard de Bezigue à deux joueurs mais c\'est autorisé dans certaines régions.
+</string>
+
+    <string name="display_phase1">
+    Le non-donneur peut ouvrir avec n’importe quelle carte. Cette carte est posée face visible sur la table. Le donneur doit répondre en jouant une carte. S\'il s\'agit d\'une carte de la même couleur mais d\'une valeur supérieure ou de n\'importe quelle carte de l\'atout et que la carte principale n\'est pas de l\'atout, elle remporte le pli. S\'il s\'agit d\'une carte inférieure ou égale à la carte jouée et de la même couleur, ou n’importe quelle carte d’une autre couleur hors-atout, le non-donneur remporte le pli.\n\n
+    Celui qui remporte le pli prend les cartes et les place dans une pile séparée. Ces cartes ne jouent plus aucun rôle dans le tour. Ils ne sont utilisés que pour marquer les annonces.\n\n
+    Notez qu\'il n\'y a aucune obligation de suivre la couleur demandée ou de remporter un pli dans cette partie du jeu.\n\n
+    Le seul moment où un joueur aurait une forte motivation pour gagner le pli, c\'est quand il y a des as ou des dix joués ou que le joueur a une annonce qu\'il souhaite déclarer.\n\n
+    Le gagnant du tour a la possibilité de declarer une annonce en déclarant sa combinaison et en la plaçant face vers le haut sur la table. Les cartes font toujours partie de sa main mais doivent rester sur la table à la vue de l\'adversaire jusqu\'à ce qu\'elles soient jouées dans des tours ultérieurs.\n\n
+    Une seule combinaison peut être déclarée par pli gagné. Les scores pour ceux-ci sont écrits immédiatement.\n\n
+    Notez qu\'une carte utilisée dans une annonce ne peut pas être jouée dans la même annonce plus tard. Par exemple, K♣ marié à Q♣ ne peut plus tard être marié au deuxième Q♣. Cependant, il peut être utilisé pour un carré de rois car il s\'agit d\'une annonce différente. Si un couple different de Roi et de Reine de trèfles venaient à être mariés après le premier, ils le pourraient.\n\n
+    Une annonce spéciale implique le sept d’atout. Il n\'est pas placé sur la table avec les autres. Au lieu de cela, il peut être échangé contre l\'atout retourné. Le deuxième sept des atouts peut également être déclaré de cette manière.\n\n
+    Le gagnant du tour tire de la pioche une fois qu\'il a déclaré son annonce. Le perdant tire alors également une carte de la pioche, conservant ainsi huit cartes en main à tout moment à ce stade de la partie. Si aucune annonce n\'est déclarée par le gagnant du pli, les cartes sont tirées immédiatement.
+</string>
+
+    <string name="display_phase2">
+    Une fois le talon épuisé, le jeu change quelque peu de nature.\n\n
+    Le vainqueur du tour final tire la dernière carte du talon, tandis que le perdant prend l\'atout retourné. Les huit dernières levées sont jouées de cette façon :\n\n
+    Désormais, le joueur qui n’est pas maître doit suivre la couleur jouée par le joueur maître et joueur une carte plus forte si possible. S\'ils ne peut pas suivre la couleur demander, il doit couper pour remporter le pli. S\'ils ne peut ni suivre la couleur, ni couper, il peut joueur une carte de son choix.\n\n
+    Les annonces ne peuvent pas être déclarées dans cette partie du jeu.\n\n
+    Le vainqueur du tour final reçoit dix points bonus, le dix de der.\n\n
+    Compter les brisques :\n\n
+    Une fois le dernier pli joué, chaque joueur rassemble les cartes qu\'il a gagnées et compte le nombre d\'as et de dix. Chacun d\'eux vaut dix points. Ce nombre est ajouté au score total déjà obtenu grâce aux différentes combinaisons que le joueur a déclarées.\n\n
+    Le premier joueur à atteindre 1 500 points gagne!\n\n
+</string>
+
+
+</resources>

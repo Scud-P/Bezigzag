@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Bezigzag.bezigzagtest.WinnerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtWinAnnounce"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text=""
+        android:id="@+id/txtWinnerName"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/hearts_red"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/winner_is"
+        android:textColor="@color/spade_black"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtWinAnnounce"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/txtWinnerName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/winner_score"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtScoreAnnounce"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/spade_black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/txtScoreAnnounce"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:id="@+id/txtWinnerScore"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/hearts_red"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/btnBackToMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWinnerScore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/back_to_menu"
+        android:backgroundTint="@color/hearts_red"
+        android:textSize="30sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

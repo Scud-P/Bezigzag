@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.Bezigzag.bezigzagtest.helpFragment">
+
+    <ImageView
+        android:id="@+id/imgSeven"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/diamond_7"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgSeven"
+        app:layout_constraintRight_toRightOf="@id/imgSeven"
+        android:src="@drawable/pts10"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgWedding"
+        android:layout_width="83dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imgSeven"
+        app:layout_constraintRight_toLeftOf="@+id/img250"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/wedding"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/imgWedding"
+        app:layout_constraintRight_toRightOf="@id/imgWedding"
+        android:src="@drawable/pts20wed"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgWedding"
+        app:layout_constraintRight_toRightOf="@id/imgWedding"
+        android:src="@drawable/pts40wed"
+        />
+
+
+    <ImageView
+        android:id="@+id/img250"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/twofifty"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/img250"
+        app:layout_constraintRight_toRightOf="@id/img250"
+        android:src="@drawable/pts250"
+        />
+
+    <ImageView
+        android:id="@+id/img4J"
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/imgWedding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/jacks4"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/img4J"
+        app:layout_constraintRight_toRightOf="@id/img4J"
+        android:src="@drawable/pts40"
+        />
+
+    <ImageView
+        android:id="@+id/img4Q"
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/img250"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/queens4"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/img4Q"
+        app:layout_constraintRight_toRightOf="@id/img4Q"
+        android:src="@drawable/pts60"
+        />
+
+    <ImageView
+        android:id="@+id/img4K"
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/img4J"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/kings4"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/img4K"
+        app:layout_constraintRight_toRightOf="@id/img4K"
+        android:src="@drawable/pts80"
+        />
+
+    <ImageView
+        android:id="@+id/img4A"
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/img4Q"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/aces4"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/img4A"
+        app:layout_constraintRight_toRightOf="@id/img4A"
+        android:src="@drawable/pts100"
+        />
+
+    <ImageView
+        android:id="@+id/imgBezigue"
+        android:layout_width="83dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/img4K"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bezigue"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgBezigue"
+        app:layout_constraintRight_toRightOf="@id/imgBezigue"
+        android:src="@drawable/pts40"
+        />
+
+    <ImageView
+        android:id="@+id/imgDoubleBezigue"
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/img4A"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/doublebezigue"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgDoubleBezigue"
+        app:layout_constraintRight_toRightOf="@id/imgDoubleBezigue"
+        android:src="@drawable/pts500"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgDoubleBezigue"
+        android:layout_marginTop="8dp"
+        android:text="@string/attribute_points"
+        android:gravity="center_horizontal"
+        android:textSize="13sp"
+        android:id="@+id/txtAttributePoints"
+        android:textColor="@color/spade_black"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

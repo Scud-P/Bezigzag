@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Bezigzag.bezigzagtest.Game">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="400dp"
+        android:id="@+id/frameLayout"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.475" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.525" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <Button
+        android:id="@+id/btnPlayer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/txtScore1"
+        app:layout_constraintLeft_toLeftOf="@id/btnEndRound"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlayer2"
+        android:backgroundTint="@color/hearts_red"
+        app:layout_constraintRight_toRightOf="@id/btnEndRound"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/txtScore2"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        android:layout_marginBottom="10dp"
+        android:text="0"
+        android:gravity="end"
+        android:textColor="@color/spade_black"/>
+
+    <TextView
+        android:id="@+id/txtScore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/btnPlayer2"
+        android:layout_marginBottom="10dp"
+        android:text="0"
+        android:gravity="end"
+        android:textColor="@color/spade_black"/>
+
+    <Button
+        android:id="@+id/btnEndRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/medium_gray"
+        android:text="@string/game_end_round"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintBottom_toTopOf="@id/btnPlayer1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_horizontal"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

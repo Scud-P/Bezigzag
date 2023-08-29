@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.Bezigzag.bezigzagtest.endRoundFragment">
+
+    <TextView
+        android:id="@+id/txtDixDeDer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/end_round_last_trick_bonus"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/btnNextRound"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/spade_black"
+        android:layout_marginTop="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtDixDeDer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGrp">
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/radioPlayer1"
+            android:background="@drawable/rounded_corner_view_black"
+            android:textColor="@color/silver"
+            android:text="Player 1"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/radioPlayer2"
+            android:text="Player 2"
+            android:background="@drawable/rounder_corner_view_red"
+            android:textColor="@color/silver"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtAcesAndTens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/end_round_aces_and_tens"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/spade_black"
+        android:gravity="center_horizontal"
+        />
+
+
+    <EditText
+        android:id="@+id/edtPlayer1AcesTens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtAcesAndTens"
+        app:layout_constraintLeft_toLeftOf="@id/radioGrp"
+        android:hint="@string/end_round_aces_and_tens_hint"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:padding="5dp"
+        android:background="@color/spade_black"/>
+
+    <EditText
+        android:id="@+id/edtPlayer2AcesTens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtAcesAndTens"
+        app:layout_constraintRight_toRightOf="@id/radioGrp"
+        android:hint="@string/end_round_aces_and_tens_hint"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:padding="5dp"
+        android:background="@color/hearts_red"/>
+
+    <Button
+        android:id="@+id/btnNextRound"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/hearts_red"
+        android:text="@string/end_round_next_round"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/silver"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

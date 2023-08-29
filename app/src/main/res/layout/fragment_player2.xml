@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.Bezigzag.bezigzagtest.player1Fragment"
+    android:background="@color/hearts_red">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.485" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.515" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:text="@string/score_helper"
+        android:id="@+id/txtScoreHelper"
+        android:textColor="@color/silver"
+        android:fontFamily="sans-serif-black"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/spade_black"
+        android:text="@string/back"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="7"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        />
+
+    <Button
+        android:id="@+id/btn250"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="250"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn4J"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_4jacks"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn7"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        />
+
+    <Button
+        android:id="@+id/btn4Q"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_4queens"
+        app:layout_constraintTop_toBottomOf="@+id/btn250"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn4K"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_4kings"
+        app:layout_constraintTop_toBottomOf="@+id/btn4J"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn4A"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_4aces"
+        app:layout_constraintTop_toBottomOf="@+id/btn4Q"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btnWedding"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_wedding"
+        app:layout_constraintTop_toBottomOf="@+id/btn4K"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@id/guideline"/>
+
+    <Button
+        android:id="@+id/btnRoyalWedding"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_royal_wedding"
+        app:layout_constraintTop_toBottomOf="@+id/btn4A"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnBezigue"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_bezigue"
+        app:layout_constraintTop_toBottomOf="@+id/btnWedding"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        />
+
+    <Button
+        android:id="@+id/btnDoubleBezigue"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/silver"
+        android:textColor="@color/black"
+        android:text="@string/score_double_bezigue"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoyalWedding"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        android:layout_marginTop="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Bezigzag.bezigzagtest.MainActivity">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="40sp"
+    android:layout_marginTop="20dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="BEZIGZAG"
+    android:id="@+id/txtAppName"
+    android:textColor="@color/hearts_red"
+    android:fontFamily="sans-serif-black"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn2PlayersGame"
+        android:text="@string/main_menu_two_players_game"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/spade_black"/>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnRules"
+        android:text="@string/main_menu_rules_menu"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn2PlayersGame"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/spade_black"/>
+
+    <android.widget.Button
+        android:id="@+id/btnFrench"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/flag_fr"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@id/btnRules"
+        app:layout_constraintTop_toBottomOf="@+id/btnRules"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <android.widget.Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/flag_uk"
+        android:textSize="22sp"
+        app:layout_constraintRight_toRightOf="@id/btnRules"
+        app:layout_constraintTop_toBottomOf="@+id/btnRules"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
